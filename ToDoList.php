@@ -11,5 +11,23 @@
         <input type="text" name="task" class="task_input">
         <button type="submit" class="task_btn" name="submit">Add Task</button>
     </form>
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>Task</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <td>1</td>
+                <td class="task">This is the Task Holder</td>
+                 <td class="delete">
+                 <a href="#">x</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
