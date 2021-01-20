@@ -60,7 +60,7 @@ th,td{
 }
 
 tr:hover{
-    background: blueviolet ;
+    background: pink ;
 }
 .task{
     text-align: left;
