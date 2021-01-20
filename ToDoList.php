@@ -49,7 +49,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php $i = 1 while ($row = mysqli_fetch_array($task)) { ?>
+            <?php $i =1; while ($row = mysqli_fetch_array($task)) { ?>
                          <tr>
                          <td><?php echo $row['id']; ?></td>
                          <td class="task"><?php echo $row['task']; ?></td>

@@ -1,5 +1,5 @@
 body{
-    background-image:BackgroundForCrudApp.gif;
+    background-image:url('BackgroundForCrudApp.gif');
 }
 .heading{
     width: 50%;
@@ -18,8 +18,12 @@ form{
     background:pink;
     border:5px solid blueviolet;
 }
+form p{
+    color: red;
+    margin: 0px;
+}
 .task_input{
-    width: 85%;
+    width: 76%;
     height: 15px;
     padding: 10px;
     border: 2px solid blueviolet;
@@ -46,13 +50,13 @@ tr{
 
 th{
     font-size: 18px;
-    color:black;
 }
 
 th,td{
     border: none;
     height: 30px;
     padding: 2px;
+    color: blueviolet;
 }
 
 tr:hover{
