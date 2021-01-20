@@ -1,10 +1,13 @@
+body{
+    background-image:BackgroundForCrudApp.gif;
+}
 .heading{
     width: 50%;
     margin: 30px;
     text-align: center;
-    color:#6b8e23;
-    background:  #fff8dc;
-    border: 2px solid #6b8e23;
+    color:rgb(150, 36, 150);
+    background:  pink;
+    border: 5px solid blueviolet;
     border-radius:20px;
 }
 form{
@@ -12,6 +15,20 @@ form{
     margin:30px auto;
     border-radius: 5px;
     padding:10px;
-    background:#fff8dc;
-    border:1px solid #6b8e23;
+    background:pink;
+    border:5px solid blueviolet;
+}
+.task_input{
+    width: 73%;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid #6b8e23;
+}
+.task_btn{
+    height: 39px;
+    background: #fff8dc;
+    color:#6b8e23;
+    border: 2px solid #6b8e23;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
