@@ -1,3 +1,18 @@
+<?php
+    $db = mysqli_connect('localhost','root','','tasklist');
+
+    if (isset($_POST['submit'])){
+        $task = $_POST['task'];
+
+        mysqli_query($db,"INSERT INTO todo (task) VALUES ('$task')");
+        header('location: ToDoList.php');
+    }
+
+    $task = mysqli_query($db,"SELECT * FROM todo");
+
+    
+?>
+
 <html>
 <head>
         <title> Objectives for Today </title>
