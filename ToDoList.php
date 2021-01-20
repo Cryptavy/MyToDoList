@@ -13,6 +13,12 @@
         header('location: ToDoList.php');
     }
 
+    if (isset($_GET['delTask'])){
+        $id = $_GET['delTask'];
+        mysqli_query($db, "DELETE FROM todo WHERE id=$id");
+        header('location: ToDoList.php');
+    }
+
     $task = mysqli_query($db,"SELECT * FROM todo");
 
     
@@ -43,15 +49,15 @@
             </tr>
         </thead>
         <tbody>
-            <?php while ($row = mysqli_fetch_array($task)) { ?>
+            <?php $i = 1 while ($row = mysqli_fetch_array($task)) { ?>
                          <tr>
                          <td><?php echo $row['id']; ?></td>
                          <td class="task"><?php echo $row['task']; ?></td>
                          <td class="delete">
-                         <a href="#">x</a>
+                         <a href="ToDoList.php?delTask=<?php echo $row['id'];?>">x</a>
                         </td>
                      </tr>
-            <?php } ?>
+            <?php $i++; } ?>
         </tbody>
     </table>
 </body>
